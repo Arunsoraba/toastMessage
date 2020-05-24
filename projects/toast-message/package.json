@@ -1,0 +1,10 @@
+{
+  "name": "toast-message",
+  "version": "0.0.1",
+  "author": "Aruna B",
+  "description": "This is light weight package, allows you to display toast messages",
+  "peerDependencies": {
+    "@angular/common": "^8.2.0",
+    "@angular/core": "^8.2.0"
+  }
+}

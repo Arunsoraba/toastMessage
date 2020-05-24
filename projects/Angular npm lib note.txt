@@ -1,0 +1,4 @@
+Ref : https://medium.com/angular-in-depth/complete-beginner-guide-to-publish-an-angular-library-to-npm-d42343801660
+
+ng new MatTypeaheadLibrary -p mat-ta
+ng g library NgxMatTypeahead -p NgxMat

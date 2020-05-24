@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "toast-message": [
+        "dist/toast-message"
+      ],
+      "toast-message/*": [
+        "dist/toast-message/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

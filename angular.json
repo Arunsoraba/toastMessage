@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ToastMessage": {
+      "projectType": "library",
+      "root": "projects/toast-message",
+      "sourceRoot": "projects/toast-message/src",
+      "prefix": "Ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/toast-message/tsconfig.lib.json",
+            "project": "projects/toast-message/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/toast-message/src/test.ts",
+            "tsConfig": "projects/toast-message/tsconfig.spec.json",
+            "karmaConfig": "projects/toast-message/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/toast-message/tsconfig.lib.json",
+              "projects/toast-message/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "toastMessage"
 }
