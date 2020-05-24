@@ -4,21 +4,27 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project ToastMessage` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ToastMessage`.
-> Note: Don't forget to add `--project ToastMessage` or else it will be added to the default project in your `angular.json` file. 
+Usage
 
-## Build
+`<Ngx-ToastMessage [message]="'hello Good morning'" [animationType]="'toast-animate-from-bottom'" [addClass] = "'toastMessageClass'"></Ngx-ToastMessage>`
 
-Run `ng build ToastMessage` to build the project. The build artifacts will be stored in the `dist/` directory.
+Message :  content you want to display
 
-## Publishing
+animation type : toast-animate-from-bottom | toast-animate-from-top
 
-After building your library with `ng build ToastMessage`, go to the dist folder `cd dist/toast-message` and run `npm publish`.
+addClass : your custom class name , ex : toastMessageClass
 
-## Running unit tests
+Customize specific styles: see below code
+.toastMessageClass{
+    background: green!important;;
+    color: #fff!important;;
+    .message{
+        
+        }
+        .close-btn{
+           color:#fff !important;
+        }
+}
 
-Run `ng test ToastMessage` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ 
+MIT licence
